@@ -2217,7 +2217,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0.3048" drill="0.508">
+<class number="0" name="default" width="0.508" drill="0.508">
 <clearance class="0" value="0.254"/>
 </class>
 </classes>
