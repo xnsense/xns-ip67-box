@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.0.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4295,7 +4295,7 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </class>
 </classes>
 <parts>
-<part name="DC1" library="dc-dc-converter" deviceset="R-78C*-1.0" device="" technology="1.8"/>
+<part name="DC3V3" library="dc-dc-converter" deviceset="R-78C*-1.0" device="" technology="1.8"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="SUPPLY1" library="supply2" deviceset="VDD" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -4397,7 +4397,7 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <plain>
 </plain>
 <instances>
-<instance part="DC1" gate="G$1" x="68.58" y="121.92"/>
+<instance part="DC3V3" gate="G$1" x="68.58" y="121.92"/>
 <instance part="P+1" gate="VCC" x="50.8" y="127"/>
 <instance part="SUPPLY1" gate="G$1" x="86.36" y="124.46"/>
 <instance part="GND1" gate="1" x="68.58" y="109.22"/>
@@ -4499,7 +4499,7 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <nets>
 <net name="VCC" class="0">
 <segment>
-<pinref part="DC1" gate="G$1" pin="VIN"/>
+<pinref part="DC3V3" gate="G$1" pin="VIN"/>
 <wire x1="55.88" y1="121.92" x2="50.8" y2="121.92" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="50.8" y1="121.92" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
@@ -4532,7 +4532,7 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="GND" class="0">
 <segment>
-<pinref part="DC1" gate="G$1" pin="GND"/>
+<pinref part="DC3V3" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="68.58" y1="114.3" x2="68.58" y2="111.76" width="0.1524" layer="91"/>
 </segment>
@@ -4590,6 +4590,18 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="180.34" y1="160.02" x2="180.34" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="JP31" gate="G$1" pin="1"/>
 <wire x1="180.34" y1="162.56" x2="180.34" y2="165.1" width="0.1524" layer="91"/>
+<junction x="180.34" y="137.16"/>
+<junction x="180.34" y="139.7"/>
+<junction x="180.34" y="142.24"/>
+<junction x="180.34" y="144.78"/>
+<junction x="180.34" y="147.32"/>
+<junction x="180.34" y="149.86"/>
+<junction x="180.34" y="152.4"/>
+<junction x="180.34" y="154.94"/>
+<junction x="180.34" y="157.48"/>
+<junction x="180.34" y="160.02"/>
+<junction x="180.34" y="162.56"/>
+<junction x="180.34" y="165.1"/>
 </segment>
 <segment>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -4617,6 +4629,18 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="195.58" y1="160.02" x2="195.58" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="JP32" gate="G$1" pin="1"/>
 <wire x1="195.58" y1="162.56" x2="195.58" y2="165.1" width="0.1524" layer="91"/>
+<junction x="195.58" y="165.1"/>
+<junction x="195.58" y="162.56"/>
+<junction x="195.58" y="160.02"/>
+<junction x="195.58" y="157.48"/>
+<junction x="195.58" y="154.94"/>
+<junction x="195.58" y="152.4"/>
+<junction x="195.58" y="149.86"/>
+<junction x="195.58" y="147.32"/>
+<junction x="195.58" y="144.78"/>
+<junction x="195.58" y="142.24"/>
+<junction x="195.58" y="139.7"/>
+<junction x="195.58" y="137.16"/>
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -4679,7 +4703,7 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </net>
 <net name="VDD" class="0">
 <segment>
-<pinref part="DC1" gate="G$1" pin="VOUT"/>
+<pinref part="DC3V3" gate="G$1" pin="VOUT"/>
 <pinref part="SUPPLY1" gate="G$1" pin="VDD"/>
 <wire x1="81.28" y1="121.92" x2="86.36" y2="121.92" width="0.1524" layer="91"/>
 </segment>
@@ -5931,12 +5955,6 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="202,1,45.72,60.96,MS1,!RESET,,,,"/>
-<approved hash="204,1,45.72,68.58,MS1,GND,,,,"/>
-<approved hash="117,1,2.54,76.2,USB,,,,,"/>
-<approved hash="117,1,2.54,71.12,VBAT,,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
