@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="8.0.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4391,6 +4391,7 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="J33" library="SparkFun-Connectors" deviceset="M07" device="NO_SILK"/>
 <part name="J34" library="SparkFun-Connectors" deviceset="M07" device="NO_SILK"/>
 <part name="X1" library="microbuilder" deviceset="ESP-12E" device=""/>
+<part name="P+2" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4409,7 +4410,7 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="X2" gate="G$1" x="53.34" y="66.04"/>
 <instance part="U1" gate="G$1" x="50.8" y="93.98"/>
 <instance part="GND2" gate="1" x="165.1" y="38.1" rot="R270"/>
-<instance part="GND3" gate="1" x="210.82" y="63.5" rot="R180"/>
+<instance part="GND3" gate="1" x="215.9" y="66.04" rot="R180"/>
 <instance part="SUPPLY3" gate="G$1" x="160.02" y="71.12" rot="R90"/>
 <instance part="GND5" gate="1" x="-20.32" y="121.92"/>
 <instance part="SUPPLY4" gate="G$1" x="-5.08" y="121.92" rot="R180"/>
@@ -4493,6 +4494,7 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="J33" gate="G$1" x="441.96" y="76.2"/>
 <instance part="J34" gate="G$1" x="454.66" y="76.2"/>
 <instance part="X1" gate="G$1" x="187.96" y="53.34" rot="R270"/>
+<instance part="P+2" gate="VCC" x="223.52" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -4528,6 +4530,12 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="40.64" y1="93.98" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="93.98" x2="38.1" y2="99.06" width="0.1524" layer="91"/>
 <junction x="38.1" y="99.06"/>
+</segment>
+<segment>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
+<wire x1="223.52" y1="63.5" x2="223.52" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="JP37" gate="A" pin="2"/>
+<wire x1="223.52" y1="53.34" x2="231.14" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -4620,11 +4628,9 @@ Standard 7-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="210.82" y1="60.96" x2="210.82" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="58.42" x2="223.52" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="58.42" x2="223.52" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="63.5" x2="215.9" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="JP37" gate="A" pin="1"/>
-<wire x1="223.52" y1="55.88" x2="231.14" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="55.88" x2="231.14" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND5" gate="1" pin="GND"/>
