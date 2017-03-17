@@ -9136,6 +9136,8 @@ http://www.vishay.com/docs/91319/sihll014.pdf</description>
 <part name="J43" library="SparkFun-Connectors" deviceset="M08" device="NO_SILK_FEMALE_PTH"/>
 <part name="5V" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
+<part name="J44" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
+<part name="J45" library="SparkFun-Connectors" deviceset="M01" device="NOSILK-KIT"/>
 </parts>
 <sheets>
 <sheet>
@@ -9291,6 +9293,8 @@ http://www.vishay.com/docs/91319/sihll014.pdf</description>
 <instance part="P+2" gate="VCC" x="168.91" y="203.2" smashed="yes">
 <attribute name="VALUE" x="166.37" y="198.12" size="1.778" layer="96" rot="R90"/>
 </instance>
+<instance part="J44" gate="G$1" x="62.23" y="182.88" rot="R270"/>
+<instance part="J45" gate="G$1" x="71.12" y="182.88" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -9615,6 +9619,11 @@ http://www.vishay.com/docs/91319/sihll014.pdf</description>
 <wire x1="48.26" y1="149.86" x2="60.96" y2="149.86" width="0.1524" layer="91"/>
 <label x="49.53" y="149.86" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="J45" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="175.26" x2="71.12" y2="170.18" width="0.1524" layer="91"/>
+<label x="71.12" y="166.37" size="1.778" layer="95" rot="R90"/>
+</segment>
 </net>
 <net name="UART_TX" class="0">
 <segment>
@@ -9626,6 +9635,11 @@ http://www.vishay.com/docs/91319/sihll014.pdf</description>
 <pinref part="X1" gate="G$1" pin="GPIO5"/>
 <wire x1="48.26" y1="152.4" x2="60.96" y2="152.4" width="0.1524" layer="91"/>
 <label x="49.53" y="152.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J44" gate="G$1" pin="1"/>
+<wire x1="62.23" y1="175.26" x2="62.23" y2="170.18" width="0.1524" layer="91"/>
+<label x="62.23" y="166.37" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$71" class="0">
